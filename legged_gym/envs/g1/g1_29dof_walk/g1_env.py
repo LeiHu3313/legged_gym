@@ -31,7 +31,7 @@ def get_euler_xyz(q):
 
     return torch.stack((roll, pitch, yaw), dim=-1)
 
-class G1_Env(LeggedRobot):
+class G1_29dof_walk(LeggedRobot):
     def __init__(self, cfg, sim_params, physics_engine, sim_device, headless):
         super().__init__(cfg, sim_params, physics_engine, sim_device, headless)
         
